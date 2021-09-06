@@ -35,4 +35,24 @@ function check(){
     return true;
 }
 
+//5. Equality
+const stringFive = '5';
+const numberFive = 5;
+
+//loose Equality
+console.log(stringFive == numberFive);
+console.log(stringFive != numberFive);
+
+//strict Equality
+console.log(stringFive === numberFive);
+console.log(stringFive !== numberFive);
+
+//object Equality
+const Hee1 = {name: 'Hee'};
+const Hee2 = {name: 'Hee'};
+const Hee3 = Hee1;
+console.log(Hee1 == Hee2);
+console.log(Hee1 === Hee2);
+console.log(Hee1 === Hee2);
+
 
