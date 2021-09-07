@@ -6,13 +6,13 @@
     console.log(name)
 }
 //hoisting
-//¾îµğ¿¡ ¼±¾ğÇß´Â°¡¿¡ »ó°ü¾øÀÌ Á¦ÀÏ À§·Î ¼±¾ğÀ» ²ø¾î ¿Ã¸²
+//ì–´ë””ì— ì„ ì–¸í–ˆëŠ”ê°€ì— ìƒê´€ì—†ì´ ì œì¼ ìœ„ë¡œ ì„ ì–¸ì„ ëŒì–´ ì˜¬ë¦¼
 
 //constants
-//°ªÀ» º¯°æ ¸øÇÔ
-//º¸¾È¼º 
+//ê°’ì„ ë³€ê²½ ëª»í•¨
+//ë³´ì•ˆì„± 
 //Thread safety 
-//ÄÚµå¸¦ ¹Ù²Ü¶§ ½Ç¼ö ¹æÁö
+//ì½”ë“œë¥¼ ë°”ê¿€ë•Œ ì‹¤ìˆ˜ ë°©ì§€
 
 //Variable
 const count = 17;
@@ -20,15 +20,15 @@ const size = 17.2;
 console.log(typeof count);
 console.log(typeof size);
 
-const infinity = 1/0 // +¼ıÀÚ¸¦ 0 À¸·Î ³ª´©°Ô µÇ¸é ¹«ÇÑ´ëÀÇ ¼ıÀÚ°ªÀÌ ³ª¿È == infinity
-const negativeinfinity = -1/0 // -¼ıÀÚ¸¦ 0 À¸·Î ³ª´©°Ô µÇ¸é ¹«ÇÑ´ëÀÇ ¼ıÀÚ°ªÀÌ ³ª¿È ==  nagative infinity
-const nAn = 'not a number' / 2 // ¼ıÀÚ°¡ ¾Æ´Ñ°ÍÀ» ¼ıÀÚ·Î ³ª´©¸é nan °ªÀÌ ³ª¿È
+const infinity = 1/0 // +ìˆ«ìë¥¼ 0 ìœ¼ë¡œ ë‚˜ëˆ„ê²Œ ë˜ë©´ ë¬´í•œëŒ€ì˜ ìˆ«ìê°’ì´ ë‚˜ì˜´ == infinity
+const negativeinfinity = -1/0 // -ìˆ«ìë¥¼ 0 ìœ¼ë¡œ ë‚˜ëˆ„ê²Œ ë˜ë©´ ë¬´í•œëŒ€ì˜ ìˆ«ìê°’ì´ ë‚˜ì˜´ ==  nagative infinity
+const nAn = 'not a number' / 2 // ìˆ«ìê°€ ì•„ë‹Œê²ƒì„ ìˆ«ìë¡œ ë‚˜ëˆ„ë©´ nan ê°’ì´ ë‚˜ì˜´
 console.log(infinity) 
 console.log(negativeinfinity) 
 console.log(nAn) 
 
 //string
-//-¸ğµÎ string Å¸ÀÔ
+//-ëª¨ë‘ string íƒ€ì…
 const char = 'c';
 const breaden = 'breaden';
 const greeting = 'hello' + breaden;
@@ -52,14 +52,14 @@ console.log(`value: ${x}, type: ${typeof x}`);
 const Heesang = { name: 'Heesang', age: 20};
 Heesang.age = 21;
 
-//symbol °íÀ¯ÇÑ ½Äº°ÀÚ¸¦ ¸¸µé¶§ »ç¿ë
+//symbol ê³ ìœ í•œ ì‹ë³„ìë¥¼ ë§Œë“¤ë•Œ ì‚¬ìš©
 const symblo1 = Symbol('id');
 const symblo2 = Symbol('id');
 console.log(symblo1 == symblo2);
-const fsymblo1 = Symbol.for('id');//µ¿ÀÏ¾È Symbol ¸¸µé±â .for
+const fsymblo1 = Symbol.for('id');//ë™ì¼ì•ˆ Symbol ë§Œë“¤ê¸° .for
 const fsymblo2 = Symbol.for('id');
 console.log(symblo1 == symblo2);
-console.log(`value: ${symbol1.description}`) //½ºÆ®¸µÀ¸·Î º¯È¯ÇØ¼­ Ãâ·Â .description
+console.log(`value: ${symbol1.description}`) //ìŠ¤íŠ¸ë§ìœ¼ë¡œ ë³€í™˜í•´ì„œ ì¶œë ¥ .description
 
 
 
