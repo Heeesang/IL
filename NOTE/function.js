@@ -44,3 +44,42 @@ function upgradeUser(user){
     }
     //logic
 } 
+
+//5. function expression
+// 이름이 없는 함수 - anonymous function
+const print = function(){
+    console.log('print');
+}
+print();
+const printAgain = print;
+printAgain();
+
+//6. Callback function
+function randomQuiz(answer,printYes,printNo){
+    if(answer === 'love you'){
+        printYes();
+    }else {
+        printNo();
+    }
+};
+
+//anonymous function
+const printYes = function(){
+    console.log('yes!');
+};
+
+//named function
+const printNo = function print(){
+    console.log('no!');
+};
+
+randomQuiz('wrong', printYes, printNo);
+randomQuiz('love you', printYes, printNo);
+
+//Arrow funtion
+// 함수를 간결하게 해주는 너무너무 고마운 친구
+const simplePrint = function(){
+    console.log('simplePrint');
+};
+
+const simplePrint = () => console.log('simplePrint');
