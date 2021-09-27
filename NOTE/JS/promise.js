@@ -52,8 +52,8 @@ const p = new Promise((resolve, reject)=>{
 });
 
 p.then(()=>{
-   console.log('1000ms 후에 fulfilled 됩니다.') 
-});
+    console.log('1000ms 후에 fulfilled 됩니다.'); 
+}); 
 
 /*
 then을 실행하는 시점을 정확히하고,
