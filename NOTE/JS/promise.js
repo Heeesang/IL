@@ -93,7 +93,7 @@ p()
     });
 
 /*
-excutor 의 resolve 함수를  실행할때 인자를 넣어 실행하면, then의 callback 함수의 인자로 받을 수 있습니다.
+excutor 의 resolve, reject 함수를  실행할때 인자를 넣어 실행하면, then, catch의 callback 함수의 인자로 받을 수 있습니다.
     resolve('Hello');
     then((message) => {...})
 */
@@ -101,16 +101,43 @@ function p(){
     return new Promise((resolve, reject)=>{
         /*pending*/
         setTimeout(()=>{
-            reject('Hello'); /*rejected*/
+            resolve('Hello'); /*resolved*/ 
         }, 1000);
     });
 }
+
+function p(){
+    return new Promise((resolve, reject)=>{
+        /*pending*/
+        setTimeout(()=>{
+            reject('error'); /*rejected*/ 
+        }, 1000);
+    });
+}
+
 p()
-    .then((message)=>{
-        console.log('1000ms 후에 fulfilled 됩니다.') 
+    .then(message =>{
+        console.log('1000ms 후에 fulfilled 됩니다.', message); 
     })  
-    .catch(()=>{
-        console.log('1000ms 후에 rejected 됩니다.') 
+    .catch(reason =>{
+        console.log('1000ms 후에 rejected 됩니다.', error); 
+    });
+
+function p(){
+    return new Promise((resolve,reject)=>{
+        /*padding*/
+        setTimeout(()=>{
+            reject(new Error('bad')); /*resolved*/ 
+        }, 1000);
+    });
+}    
+
+p()
+    .then(message =>{
+        console.log('1000ms 후에 fulfilled 됩니다.', message); 
+    })  
+    .catch(error =>{
+        console.log('1000ms 후에 rejected 됩니다.', error); 
     });
 
 
