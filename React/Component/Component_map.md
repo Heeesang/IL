@@ -41,3 +41,11 @@ const IterationSample = () => {
 
 - map 함수의 인자로 전달되는 함수 내부에서 컴포넌트 props를 설정하듯이 설정
 - key 값은 언제나 유일해야 한다.
+
+## 함수
+- 데이터 추가
+> concat 
+- 데이터 제거
+> filter 
+```JS
+const numbers = [1,2,3,4,5,6]
