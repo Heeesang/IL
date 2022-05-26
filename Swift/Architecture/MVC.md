@@ -1,10 +1,10 @@
-# MVC란 🤔
-MVC 패턴은 애ㄹㅔ서 기본적으로 지원하는 디자인 패턴으로, <mark>Model + View + Controller</mark> 구조의 아키텍처 패턴을 말한다.
+# MVC란 
+MVC 패턴은 애플에서 기본적으로 지원하는 디자인 패턴으로, **Model + View + Controller** 구조의 아키텍처 패턴을 말한다.
 <img  src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqU4Qr%2FbtqCRyNPNrF%2FN5pTultgaN2g5wb9n34jKK%2Fimg.png"/>
 
-- M(Model) : 앱의 데이터와 비즈니스 로직을 갖고 있다.
-- V(View) : 사용자에게 데이터를 보여죽나 UI를 담당한다.
-- C(Controller) : Model 과 View를 연결해주는 역할로 View로부터 사용자의 action을 받아 Model에게 어떤 작업을 해야 하는지 알려주거나, Model의 데이터 변화를 View에게 전달하여 View를 어떻게 업데이트할지 알려준다.
+- **M(Model)** : 앱의 데이터와 비즈니스 로직을 갖고 있다.
+- **V(View)** : 사용자에게 데이터를 보여죽나 UI를 담당한다.
+- **C(Controller)** : Model 과 View를 연결해주는 역할로 View로부터 사용자의 action을 받아 Model에게 어떤 작업을 해야 하는지 알려주거나, Model의 데이터 변화를 View에게 전달하여 View를 어떻게 업데이트할지 알려준다.
 
 ## 🤤 장점
 - 다른 패턴에 비해 코드량이 적다.
