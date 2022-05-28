@@ -1,4 +1,4 @@
-# Moya가 모야...?
+# Moya가 모야...? 🧐
 
 Moya는 스위프트 네트워크 추상화 라이브러리 입니다.
 네트워크 계층을 구조화하는 접근방식을 제공하면서 실제로 Alamofire를 사용 합니다. 
@@ -20,3 +20,9 @@ CocoaPods
 *Target*
 > 전체 API 서비스를 설명 합니다. TargetType 프로토콜을 체택하는 것으로 target을 정의 합니다.
 
+*Endpoint*  
+> moya는 네트워크 요청을 이행하는 요구된 정보의 기본조각을 설명하는 반 내부 끝점 객체를 사용합니다.
+
+[Moya_practice](https://github.com/Heeesang/NEws_aPi)
+
+<https://wodyios.tistory.com/23>
