@@ -7,3 +7,6 @@
 생선된 VC의 화면 전환  
 
 <img src = "https://velog.velcdn.com/images%2Fellyheetov%2Fpost%2F6ec003e2-ef4b-4a4f-a326-199d96484867%2FScreen%20Shot%202021-06-15%20at%205.35.05%20PM.png"/>
+
+|project|[GwakDiary](https://github.com/Heeesang/GwakDiary)|
+|---|---|
